@@ -1,37 +1,31 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Routes
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css';
-import Navigation from "./Componants/Navigation"
+import "./App.css";
+import { AnimatePresence } from "framer-motion";
+import Navigation from "./Componants/Navigation";
 import { useState } from "react";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Project from "./Pages/Project";
 import Contact from "./Pages/Contact";
-import Resume from './Pages/Resume';
+import Resume from "./Pages/Resume";
 
-
-export default function App(){
-  return(
+export default function App() {
+  const [isFirstMount, setIsFirstMount] = useState(true);
+  return (
     <Router>
-      <Navigation />
+        <Navigation />
+        <AnimatePresence exitBeforeEnter>
         <Routes>
-          <Route path="/" element = {<Home />} />
-          <Route path="/about" element = {<About />} />
-          <Route path="/project" element = {<Project />} />
-          <Route path="/contact" element = {<Contact />} />
-          <Route path="/resume" element = {<Resume />} />
-        </Routes>  
-    </Router>
-
-   
+          <Route path="/" element={<Home isFirstMount={isFirstMount}/>} />
+          <Route path="/about" element={<About isFirstMount={isFirstMount} />} />
+          <Route path="/project" element={<Project isFirstMount={isFirstMount} />} />
+          <Route path="/contact" element={<Contact isFirstMount={isFirstMount} />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+    </AnimatePresence>
+      </Router>
   );
-
 }
-
-
+// react page transitions
