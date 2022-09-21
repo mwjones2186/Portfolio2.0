@@ -9,7 +9,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Project from "./Pages/Project";
 import Contact from "./Pages/Contact";
-import Resume from "./Pages/Resume";
+// import Resume from "./Componants/Resume";
 
 export default function App() {
   const [isFirstMount, setIsFirstMount] = useState(true);
@@ -22,7 +22,7 @@ export default function App() {
           <Route path="/about" element={<About isFirstMount={isFirstMount} />} />
           <Route path="/project" element={<Project isFirstMount={isFirstMount} />} />
           <Route path="/contact" element={<Contact isFirstMount={isFirstMount} />} />
-          <Route path="/resume" element={<Resume />} />
+          {/* <Route path="/about/resume" element={<Resume />} /> */}
         </Routes>
     </AnimatePresence>
       </Router>

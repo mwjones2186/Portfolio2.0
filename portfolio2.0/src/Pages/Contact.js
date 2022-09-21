@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import ContactForm from "../Componants/ContactForm";
 
 const content = (isFirstMount) => ({
   animate: {
@@ -25,7 +26,7 @@ const form = {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.7,
+        duration: 1.5,
         ease: [0.6, -0.05, 0.01, 0.99],
       },
     },
@@ -50,24 +51,9 @@ export default function Home({ isFirstMount }) {
           Get in contact with me
         </motion.h1>
 
-        <motion.section variants={form} className="text-gray-700 body-font">
-
-      <div>
-        <form>
-          <label>
-            Name:
-            <input type="text" value={""} />
-          </label>
-          <label>
-            Email:
-            <input type="text" value={""} />
-          </label>
-          <label>
-            Message:
-            <input type="text" value={""} />
-          </label>
-        </form>
-      </div>
+        <motion.section initial= {false} variants={form} className="text-gray-700 body-font">
+          <ContactForm />
+      
         </motion.section>
       </motion.div>
     </motion.section>
