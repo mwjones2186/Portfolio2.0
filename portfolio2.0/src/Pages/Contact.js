@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import ContactForm from "../Componants/ContactForm";
-
+import Image from "mui-image"
 const content = (isFirstMount) => ({
   animate: {
     transition: { staggerChildren: 0.1, delayChildren: isFirstMount ? 2.8 : 0 },
@@ -21,15 +21,15 @@ const title = {
 };
 
 const form = {
-    initial: { y: -20, opacity: 0 },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 1.5,
-        ease: [0.6, -0.05, 0.01, 0.99],
-      },
+  initial: { y: -20, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      ease: [0.6, -0.05, 0.01, 0.99],
     },
+  },
 };
 
 export default function Home({ isFirstMount }) {
@@ -51,9 +51,13 @@ export default function Home({ isFirstMount }) {
           Get in contact with me
         </motion.h1>
 
-        <motion.section initial= {false} variants={form} className="text-gray-700 body-font">
+        <motion.section
+          initial={false}
+          variants={form}
+          className="text-gray-700 body-font"
+        >
           <ContactForm />
-      
+       
         </motion.section>
       </motion.div>
     </motion.section>
@@ -142,5 +146,3 @@ function InitialTransition() {
     </motion.div>
   );
 }
-
-
