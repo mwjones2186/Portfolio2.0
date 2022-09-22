@@ -37,6 +37,24 @@ Michael W. Jones
   No formal tests like JEST or anything, just lots of trial and error. 
 
   ## Screen shots
+  
+  Home page- Needs to be built out
+  ![port1](https://user-images.githubusercontent.com/97492542/191790761-1052c88b-085e-47a4-aeec-d1153cefda46.png)
+
+  About page- Needs to be built out
+  ![port2](https://user-images.githubusercontent.com/97492542/191790767-9114b9ed-cd9c-4ea8-bcba-0132a6c0dbee.png)
+
+  Project page- Showing a placeholder image to show image functionality
+  ![port3](https://user-images.githubusercontent.com/97492542/191790770-2914bb4f-cca0-4e80-a137-1f22f8dc9546.png)
+
+  Project page- highlighting an actual project. Image does not display but will. github and chome buttons work to deployed cite and repo. 
+  ![port4](https://user-images.githubusercontent.com/97492542/191790773-6789b0cb-34a4-4e22-9c56-9d35372cac23.png)
+
+  Contact page - Overview top portion
+  ![port5](https://user-images.githubusercontent.com/97492542/191790775-7ba35e04-cd5b-4c15-aa64-aa3d5a1ca834.png)
+
+  Contact page - Overview bottom portion with gitlab, linkedin and slack icons to link to those pages
+  ![port6](https://user-images.githubusercontent.com/97492542/191790780-be3074bc-73d9-4fe9-81f5-ccb05c9922c2.png)
 
 
 
