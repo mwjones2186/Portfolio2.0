@@ -23,8 +23,8 @@ export default function Form() {
         autoComplete="off"
       >
         <Image
-            src="https://www.hcltechsw.com/wps/wcm/connect/0002fd52-5984-413b-b59c-b2bd33c0211a/Master-banner.gif?MOD=AJPERES&CACHEID=ROOTWORKSPACE-0002fd52-5984-413b-b59c-b2bd33c0211a-nW1hoVn"
-            height="100%"
+            src="https://2e8ram2s1li74atce18qz5y1-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/Bootcamp-MOOC-Learning-Tech-Coding-Programming-Dice.png"
+            height="100"
             width="100%"
             fit="fill"
             showLoading={false}
@@ -40,12 +40,12 @@ export default function Form() {
             className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full width: 100%"
             sx={{
               m:1,
-              width: 1/4,
+              width: 1/2,
               p: 1,
               boxShadow: 2,
             }}
             id="standard-basic"
-            label="First Name"
+            label="First & Last Name"
             variant="standard"
           />
        
@@ -55,12 +55,12 @@ export default function Form() {
             className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full width:100%"
             sx={{
               m:1,
-              width: 1/4,
+              width: 1/2,
               p: 1,
               boxShadow: 2,
             }}
             id="standard-basic"
-            label="Last Name"
+            label="Email Address"
             variant="standard"
           />
         {/* </div>
@@ -69,7 +69,7 @@ export default function Form() {
             className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full width: 100%"
             sx={{
               m:1,
-              width: 1/4,
+              width: 3/4,
               p: 1,
               boxShadow: 2,
             }}
@@ -85,10 +85,11 @@ export default function Form() {
             sx={{
               m:1,
               width: 3/4,
-              height: 1/2,
+              height: 200,
               p: 1,
               boxShadow: 2,
             }}
+            
             label="Message"
             rows={6}
             defaultValue=""
@@ -96,11 +97,27 @@ export default function Form() {
           />
         {/* </div>
         <div> */}
-        <Button id="" className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full width: 100%" variant="outlined" >
+        <Button id="" className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full width: 100%" 
+        sx={{
+              m:1,
+              width: 1/4,
+              height: 1/2,
+              p: 1,
+              boxShadow: 2,
+            }} variant="outlined" >
           Send
         </Button>
+        
+
         {/* </div> */}
       </Box>
+      <a className="gitHub-btn">
+          <i class="fab fa-github"></i></a>
+      <a className="linkedIn-btn">
+          <i class="fab fa-linkedin"></i></a>
+      <a className="slack-btn">
+          <i class="fab fa-slack"></i></a>
+      
     </Container>
   );
 }

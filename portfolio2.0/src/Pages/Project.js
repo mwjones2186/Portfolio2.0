@@ -71,10 +71,7 @@ export default function Projects({ isFirstMount }) {
           variants={title(isFirstMount)}
           className="space-y-12"
         >
-          <motion.h1
-            variants={title}
-            className="project-page-title"
-          >
+          <motion.h1 variants={title} className="project-page-title">
             Here are some of my projects!
           </motion.h1>
         </motion.div>
@@ -117,15 +114,21 @@ export default function Projects({ isFirstMount }) {
           {"‣"}
         </div>
         <div></div>
-        <h1 key={page} className="project-title">{images[imageIndex].title}</h1>
+        <h1 key={page} className="project-title">
+          {images[imageIndex].title}
+        </h1>
         <a className="project-repo" href={images[imageIndex].repo}>
           <i class="fab fa-github"></i>
         </a>
         <a className="project-deployed" href={images[imageIndex].deployed}>
           <i class="fab fa-chrome"></i>
         </a>
-        <p className="project-program">Built with: {images[imageIndex].programmedWith}</p>
-        <p className="project-description">Description: {images[imageIndex].description}</p>
+        <p className="project-program">
+          Built with: {images[imageIndex].programmedWith}
+        </p>
+        <p className="project-description">
+          Description: {images[imageIndex].description}
+        </p>
       </motion.section>
     </>
   );

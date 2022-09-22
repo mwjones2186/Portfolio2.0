@@ -101,7 +101,10 @@ img {
 }
 
 .project-repo,
-.project-deployed
+.project-deployed,
+.linkedIn-btn,
+.gitHub-btn,
+.slack-btn
 {
  
   position: relative;  
@@ -113,6 +116,9 @@ img {
   font-weight: bold;
   font-size: 38px;
   z-index: 2;
+  margin: 5px;
+  left: 45%;
+
 }
 /* .project-deployed{
 
