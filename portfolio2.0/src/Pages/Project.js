@@ -29,13 +29,13 @@ const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
 
-const content = (isFirstMount) => ({
+const title = (isFirstMount) => ({
   animate: {
-    transition: { staggerChildren: 0.1, delayChildren: isFirstMount ? 2.8 : 0 },
+    transition: { staggerChildren: 0.1, delayChildren: true ? 2.8 : 0 },
   },
 });
 
-const title = {
+const content = {
   initial: { y: -20, opacity: 0 },
   animate: {
     y: 0,
@@ -68,14 +68,14 @@ export default function Projects({ isFirstMount }) {
         <motion.div
           initial="initial"
           animate="animate"
-          variants={content(isFirstMount)}
+          variants={title(isFirstMount)}
           className="space-y-12"
         >
           <motion.h1
             variants={title}
-            className="text-6xl project-title font-white text-center"
+            className="project-page-title"
           >
-            This is The Projects Page
+            Here are some of my projects!
           </motion.h1>
         </motion.div>
         <AnimatePresence
@@ -87,7 +87,7 @@ export default function Projects({ isFirstMount }) {
             key={page}
             src={images[imageIndex].image}
             custom={direction}
-            variants={variants}
+            variants={content}
             initial="enter"
             animate="center"
             exit="exit"
@@ -117,7 +117,7 @@ export default function Projects({ isFirstMount }) {
           {"‣"}
         </div>
         <div></div>
-        <h1 key={page}>{images[imageIndex].title}</h1>
+        <h1 key={page} className="project-title">{images[imageIndex].title}</h1>
         <a className="project-repo" href={images[imageIndex].repo}>
           <i class="fab fa-github"></i>
         </a>

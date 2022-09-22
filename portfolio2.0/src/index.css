@@ -1,3 +1,5 @@
+/* main site css styling */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,6 +13,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* MAIN CITE STYLING FINISH*/
+
+/* PROJECT PAGE STYLING */
+
 .projects{
   width: 100vw;
   height: 100vh;
@@ -23,9 +30,9 @@ code {
   /* align-items: center; */
 }
 
-.project-title{
+.project-page-title{
   color: white !important;
-  text-align: start
+  text-align: center;
 }
 ;
 
@@ -124,3 +131,34 @@ img {
   top: 150px;
   color:cyan;
 }
+
+.project-title{
+  color:green
+}
+
+/* PROJECT PAGE STYLING FINISH */
+
+/* CONTACT PAGE STYLING */
+
+.contact-form-container{
+  width:fit-content;
+}
+
+.contact-first{
+ 
+}
+
+#contact-btn{
+
+}
+
+.contact-subject{
+
+
+}
+
+.contact-message{
+
+
+}
+
