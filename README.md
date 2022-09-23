@@ -32,6 +32,8 @@ Michael W. Jones
 
   As always, feedback is appreciated. Good, bad or ugly. I want to know my shortcomings as much as I want to hear praises. We can always get better. You could also help contribute by offering me a job! or a lead...or anything. Hahaha! A side from that, any shout out is apprecited and please friend me on LinkedIn. Thank you!.
 
+  The contact me form works! Feel free to test it out and send me your thoughts via email!! Thanks!
+
   ## Tests
 
   No formal tests like JEST or anything, just lots of trial and error. 
@@ -62,6 +64,8 @@ Michael W. Jones
 
   https://drive.google.com/file/d/13O1EJhqUKSo9OBhkwwrjcUBo0BqZdtoj/view
 
-  
+  ## Deployed app
+
+  https://portfolio2-0-vjqg.vercel.app/
 
   
