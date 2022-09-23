@@ -26,6 +26,7 @@ export default function App() {
         </Routes>
     </AnimatePresence>
       </Router>
+      
   );
 }
 // react page transitions
