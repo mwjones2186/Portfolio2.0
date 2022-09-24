@@ -53,7 +53,7 @@ export default function Form() {
             action="https://formsubmit.co/mwjones2186@gmail.com"
             method="POST"
           >
-            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html" />
+            <input type="hidden" name="_next" value="https://portfolio2-0-vjqg.vercel.app/thanks" />
             <TextField
               className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full width: 100%"
               sx={{

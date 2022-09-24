@@ -9,6 +9,8 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Project from "./Pages/Project";
 import Contact from "./Pages/Contact";
+import Thanks from "./Pages/Thanks";
+
 // import Resume from "./Componants/Resume";
 
 export default function App() {
@@ -22,7 +24,7 @@ export default function App() {
           <Route path="/about" element={<About isFirstMount={isFirstMount} />} />
           <Route path="/project" element={<Project isFirstMount={isFirstMount} />} />
           <Route path="/contact" element={<Contact isFirstMount={isFirstMount} />} />
-          {/* <Route path="/contact/thanks" element={<Thanks isFirstMount={isFirstMount} />} /> */}
+          <Route path="/thanks" element={<Thanks isFirstMount={isFirstMount} />} />
           {/* <Route path="/about/resume" element={<Resume isFirstMount={isFirstMount} />} /> */}
           {/* <Route path="/about/resume" element={<Resume />} /> */}
         </Routes>
