@@ -22,6 +22,8 @@ export default function App() {
           <Route path="/about" element={<About isFirstMount={isFirstMount} />} />
           <Route path="/project" element={<Project isFirstMount={isFirstMount} />} />
           <Route path="/contact" element={<Contact isFirstMount={isFirstMount} />} />
+          {/* <Route path="/contact/thanks" element={<Thanks isFirstMount={isFirstMount} />} /> */}
+          {/* <Route path="/about/resume" element={<Resume isFirstMount={isFirstMount} />} /> */}
           {/* <Route path="/about/resume" element={<Resume />} /> */}
         </Routes>
     </AnimatePresence>

@@ -140,7 +140,7 @@ function InitialTransition() {
           y="50%"
           style={{ fill: "url(#pattern)" }}
         >
-          This is The Home Page
+          
         </text>
       </motion.svg>
     </motion.div>

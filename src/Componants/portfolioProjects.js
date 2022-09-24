@@ -1,5 +1,7 @@
-import projectTwo from "./images/Project 2.png";
 import projectOne from "./images/Project 1.png";
+import projectTwo from "./images/Project 2.png";
+
+
 export const images = [
   {
     image:  projectOne ,

@@ -6,6 +6,8 @@ import TextField from "@mui/material/TextField";
 import Container from "@mui/material/Container";
 import { Button, SendIcon } from "@mui/material";
 import Image from "mui-image";
+import { links } from "./ButtonLinks";
+
 export default function Form() {
   return (
     <Container>
@@ -138,46 +140,15 @@ export default function Form() {
 
         {/* </div> */}
       </Box>
-      <a className="gitHub-btn">
+      <a className="gitHub-btn" href={links[0].github}>
         <i className="fab fa-github"></i>
       </a>
-      <a className="linkedIn-btn">
+      <a className="linkedIn-btn" href={links[0].linkedIn}>
         <i className="fab fa-linkedin"></i>
       </a>
-      <a className="slack-btn">
-        <i className="fab fa-slack"></i>
+      <a className="slack-btn" href={links[0].facebook}>
+        <i className="fab fa-facebook"></i>
       </a>
     </Container>
   );
 }
-// const [email, setEmail] = useState("");
-// const [userName, setUserName] = useState("");
-// const [errorMessage, setErrorMessage] = useState("");
-// const [message, setMessage] = useState("");
-
-// const handleInputChange = (e) => {
-//   const { target } = e;
-//   const inputType = target.name;
-//   const inputValue = target.value;
-
-//   if (inputType === "email") {
-//     setEmail(inputValue);
-//   } else if (inputType === "userName") {
-//     setUserName(inputValue);
-//   } else setMessage(inputValue);
-// };
-
-// const handleFormSubmit = (e) => {
-//   e.preventDefault();
-
-//   if (!validateEmail(email) || !userName) {
-//     setErrorMessage("Email is invalid");
-
-//     return;
-
-//   setUserName("");
-
-//   setMessage("");
-//   setEmail("");
-//   alert(`Hello ${userName}`);
-// };
