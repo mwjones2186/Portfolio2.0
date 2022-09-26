@@ -1,4 +1,4 @@
-  #The Portfolio of Michael Jones
+ # The Portfolio of Michael Jones
 
   ## Deployed app
 
