@@ -1,4 +1,8 @@
-Michael W. Jones 
+ # The Portfolio of Michael Jones
+
+  ## Deployed app
+
+  https://portfolio2-0-vjqg.vercel.app/
   
 
   ## Table of Contents
@@ -64,8 +68,6 @@ Michael W. Jones
 
   https://drive.google.com/file/d/13O1EJhqUKSo9OBhkwwrjcUBo0BqZdtoj/view
 
-  ## Deployed app
 
-  https://portfolio2-0-vjqg.vercel.app/
 
   
