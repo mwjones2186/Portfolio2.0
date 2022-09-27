@@ -14,37 +14,37 @@ const title = {
     opacity: 1,
     transition: {
       duration: 1.5,
-      delay: .3,
+      delay: 0.3,
       ease: [0.6, -0.05, 0.01, 0.99],
     },
   },
 };
 
 const textH2 = {
-    initial: { y: -20, opacity: 0 },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 1.5,
-        delay: .7,
-        ease: [0.6, -0.05, 0.01, 0.99],
-      },
+  initial: { y: -20, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      delay: 0.7,
+      ease: [0.6, -0.05, 0.01, 0.99],
     },
-  };
+  },
+};
 
-  const textP = {
-    initial: { y: -20, opacity: 0 },
-    animate: {
-      y: 50,
-      opacity: 1,
-      transition: {
-        duration: 1.5,
-        delay: 1.5,
-        ease: [0.6, -0.05, 0.01, 0.99],
-      },
+const textP = {
+  initial: { y: -20, opacity: 0 },
+  animate: {
+    y: 50,
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      delay: 1.5,
+      ease: [0.6, -0.05, 0.01, 0.99],
     },
-  };
+  },
+};
 
 export default function Home({ isFirstMount }) {
   return (
@@ -62,15 +62,19 @@ export default function Home({ isFirstMount }) {
         className="space-y-12"
       >
         <motion.h1 variants={title} className="text-6xl font-black text-center">
-        Welcome!
+          Welcome!
         </motion.h1>
-            <motion.h2 variants={textH2} className="text-6xl font-black text-center">
-            Thank you for checking out my Portfolio!
-            </motion.h2>
-            <motion.p variants={textP} className="text=4xl front-black text-center"> Please take a look around. 
-            </motion.p>
+        <motion.h2
+          variants={textH2}
+          className="text-6xl font-black text-center"
+        >
+          Thank you for checking out my Portfolio!
+        </motion.h2>
+        <motion.p variants={textP} className="text=4xl front-black text-center">
+          {" "}
+          Please take a look around.
+        </motion.p>
       </motion.div>
-      
     </motion.section>
   );
 }
@@ -150,8 +154,7 @@ function InitialTransition() {
           x="50%"
           y="50%"
           style={{ fill: "url(#pattern)" }}
-        >
-        </text>
+        ></text>
       </motion.svg>
     </motion.div>
   );

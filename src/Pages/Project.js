@@ -66,13 +66,13 @@ export default function Projects({ isFirstMount }) {
         {isFirstMount && <InitialTransition />}
 
         <motion.div
-          initial="initial"
+          initial={false}
           animate="animate"
-          variants={title(isFirstMount)}
+          variants={title}
           className="space-y-12"
         >
           <motion.h1 variants={title} className="project-page-title">
-            Here are some of my projects!
+            Check out a few of my Projects!
           </motion.h1>
         </motion.div>
         <AnimatePresence
@@ -85,11 +85,11 @@ export default function Projects({ isFirstMount }) {
             src={images[imageIndex].image}
             custom={direction}
             variants={content}
-            initial="enter"
+            initial={false}
             animate="center"
             exit="exit"
             transition={{
-              x: { type: "spring", stiffness: 300, damping: 30 },
+              x: { type: "inertia", stiffness: 300, damping: 30 },
               opacity: { duration: 0.2 },
             }}
             className="animate-image"
@@ -106,7 +106,7 @@ export default function Projects({ isFirstMount }) {
               }
             }}
           />
-        </AnimatePresence>
+      </AnimatePresence>
         <div className="next" onClick={() => paginate(1)}>
           {"‣"}
         </div>
@@ -210,7 +210,6 @@ function InitialTransition() {
           y="50%"
           style={{ fill: "url(#pattern)" }}
         >
-          This is The Home Page
         </text>
       </motion.svg>
     </motion.div>

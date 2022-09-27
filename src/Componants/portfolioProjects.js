@@ -1,6 +1,6 @@
-import projectOne from "./images/Project 1.png";
-import projectTwo from "./images/Project 2.png";
-
+import projectOne from "./images/ProjectOne.png";
+import projectTwo from "./images/ProjectTwo.png";
+import projectThree from "./images/RunBuddy.png"
 
 export const images = [
   {
@@ -8,7 +8,7 @@ export const images = [
     title: "CampFireCast",
     repo: "https://github.com/mwjones2186/camp-firecast",
     deployed: "https://mwjones2186.github.io/camp-firecast/",
-    description: "This application set out to .....",
+    description: "Most fires are caused by people and I wanted to design an app that would allow someone to check weather to see if there are redflag warnings present that would make having a fire dangerous or safer",
     programmedWith: "HTML, CSS, JS, Skeleton and utilizing API calls.",
   },
   {
@@ -16,36 +16,18 @@ export const images = [
     title: "Hobbista",
     repo: "https://github.com/mwjones2186/Green-Room",
     deployed: "https://young-dusk-65986.herokuapp.com/",
-    discription:
+    description:
       "Hobbista is a social media style app that allows a user to input thier interests and chat on threads about thier interests.",
     programmedWith:
       "JS, Express, Sequalize, Express-handlebars, CMV style backend and MySQL.",
   },
   {
-    image:
-      "https://d33wubrfki0l68.cloudfront.net/594de66469079c21fc54c14db0591305a1198dd6/3f4b1/static/images/wallpapers/bridge-01@2x.png",
-    title: "Project Three",
-    repo: "https://www.linkedin.com",
-    deployed: "",
-    discription: "",
-    programmedWith: "",
+    image: projectThree,
+    title: "Run Buddy",
+    repo: "https://github.com/mwjones2186/run-buddy",
+    deployed: "https://mwjones2186.github.io/run-buddy/",
+    description: "Run Buddy was an application that had the functioning code. I was tasked with the CSS styling and HTML work. There was a specific plan needing to be followed.",
+    programmedWith: "CSS HTML",
   },
-  {
-    image:
-      "https://cdnb.artstation.com/p/assets/images/images/024/538/827/original/pixel-jeff-clipa-s.gif?1582740711",
-    title: "Project Four",
-    repo: "https://www.linkedin.com",
-    deployed: "",
-    discription: "",
-    programmedWith: "",
-  },
-  {
-    image:
-      "https://assets2.razerzone.com/images/downloads-page/thumbnails/synthesize_thumbnail.jpg",
-    title: "Project Five",
-    repo: "https://www.linkedin.com",
-    deployed: "",
-    discription: "",
-    programmedWith: "",
-  },
+  
 ];
